@@ -2,8 +2,9 @@
 
 # TabNews | Watch Client
 
-Cliente watch construído em Flutter para visualizar e interagir com as
-notícias/artigos publicados no [TabNews](https://tabnews.com.br).
+Cliente [TabNews](https://tabnews.com.br) para smartwatch construído em
+[Flutter](https://flutter.dev) para visualizar e interagir com as notícias e
+artigos publicados na plataforma.
 
 ## 🧑‍💻 Tecnologias
 
@@ -16,7 +17,7 @@ Veja as dependências do projeto em: [pubspec.yaml](./pubspec.yaml)
 
 ## 🖥️ Plataformas
 
-* WearOS(SDK >=23) ✅
+* WearOS(SDK >=24) ✅
 
 ## 🧰 Recursos
 

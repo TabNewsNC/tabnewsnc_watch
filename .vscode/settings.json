@@ -1,12 +1,24 @@
 {
   "cSpell.words": [
+    "allprojects",
     "androidx",
+    "chatbubble",
     "cupertino",
+    "grayscale",
+    "ionicons",
+    "jetbrains",
     "kotlin",
+    "linux",
     "pubspec",
+    "samsung",
     "softyes",
-    "tabnews"
+    "Subproject",
+    "subprojects",
+    "tabcoins",
+    "tabnews",
+    "tabnewsnc"
   ],
   "java.configuration.updateBuildConfiguration": "disabled",
-  "dart.flutterSdkPath": ".fvm/versions/3.38.3"
+  "dart.flutterSdkPath": ".fvm/versions/3.38.4",
+  "makefile.configureOnOpen": false
 }

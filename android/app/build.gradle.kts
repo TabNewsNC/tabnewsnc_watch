@@ -20,7 +20,7 @@ android {
 
     defaultConfig {
         applicationId = "br.com.softyes.tabnews"
-        minSdk = flutter.minSdkVersion //flutter.minSdkVersion
+        minSdk = 24 //flutter.minSdkVersion
         targetSdk = 36 //flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName

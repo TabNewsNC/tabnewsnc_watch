@@ -8,21 +8,27 @@ repository: https://github.com/TabNewsNC/tabnewsnc_watch
 version: 0.1.0+1
 
 environment:
-  sdk: ^3.10.1
-  flutter: ^3.38.3
+  sdk: ^3.10.3
+  flutter: ^3.38.4
 
 dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.8
+  wear_plus: ^1.2.4
+  rotary_scrollbar: ^1.1.0
+  tabnewsnc_ui:
+    path: ../tabnewsnc_ui
+  tabnewsnc_engine:
+    path: ../tabnewsnc_engine
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^6.0.0
+  icons_launcher: ^3.0.3
   very_good_analysis: ^10.0.0
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true

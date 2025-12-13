@@ -1,0 +1,25 @@
+icons_launcher:
+  platforms:
+    android:
+      enable: true
+      image_path: "assets/launcher_icons/launcher_icon.png"
+      notification_image: "assets/launcher_icons/notification_icon.png"
+      adaptive_round_image: "assets/launcher_icons/adaptive_icon_round.png"
+      adaptive_background_image: "assets/launcher_icons/adaptive_icon_bg.png"
+      adaptive_foreground_image: "assets/launcher_icons/adaptive_icon_fg.png"
+      adaptive_monochrome_image: "assets/launcher_icons/adaptive_icon_mono.png"
+
+    ios:
+      enable: false
+
+    web:
+      enable: false
+
+    macos:
+      enable: false
+
+    windows:
+      enable: false
+
+    linux:
+      enable: false

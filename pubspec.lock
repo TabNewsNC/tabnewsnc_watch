@@ -33,6 +33,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.13.0"
+  auto_injector:
+    dependency: transitive
+    description:
+      name: auto_injector
+      sha256: "1fc2624898e92485122eb2b1698dd42511d7ff6574f84a3a8606fc4549a1e8f8"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.1"
   boolean_selector:
     dependency: transitive
     description:
@@ -161,6 +169,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.0.1"
+  fixnum:
+    dependency: transitive
+    description:
+      name: fixnum
+      sha256: b6dc7065e46c974bc7c5f143080a6764ec7a4be6da1285ececdc37be96de53be
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.1"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -174,6 +190,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.14.4"
+  flutter_modular:
+    dependency: "direct main"
+    description:
+      name: flutter_modular
+      sha256: "33a63d9fe61429d12b3dfa04795ed890f17d179d3d38e988ba7969651fcd5586"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.4.1"
   flutter_native_splash:
     dependency: "direct dev"
     description:
@@ -320,6 +344,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
+  modular_core:
+    dependency: transitive
+    description:
+      name: modular_core
+      sha256: "1db0420a0dfb8a2c6dca846e7cbaa4ffeb778e247916dbcb27fb25aa566e5436"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.4.1"
   path:
     dependency: transitive
     description:
@@ -408,6 +440,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.3"
+  result_dart:
+    dependency: transitive
+    description:
+      name: result_dart
+      sha256: "0666b21fbdf697b3bdd9986348a380aa204b3ebe7c146d8e4cdaa7ce735e6054"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.1"
   rotary_scrollbar:
     dependency: "direct main"
     description:
@@ -456,17 +496,21 @@ packages:
   tabnewsnc_engine:
     dependency: "direct main"
     description:
-      path: "../tabnewsnc_engine"
-      relative: true
-    source: path
+      path: "."
+      resolved-ref: b81bb0b15162868e3e9baf03d1c93c154795d254
+      tag-pattern: "v{{version}}"
+      url: "git@github.com:TabNewsNC/tabnewsnc_engine.git"
+    source: git
     version: "0.1.0"
   tabnewsnc_ui:
     dependency: "direct main"
     description:
-      path: "../tabnewsnc_ui"
-      relative: true
-    source: path
-    version: "0.2.0"
+      path: "."
+      ref: "680f17e"
+      resolved-ref: "680f17eb26ecc24062333256ce5d8330d60b8dab"
+      url: "git@github.com:TabNewsNC/tabnewsnc_ui.git"
+    source: git
+    version: "0.1.1"
   term_glyph:
     dependency: transitive
     description:
@@ -507,6 +551,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.1"
+  uuid:
+    dependency: transitive
+    description:
+      name: uuid
+      sha256: a11b666489b1954e01d992f3d601b1804a33937b5a8fe677bd26b8a9f96f96e8
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.5.2"
   vector_math:
     dependency: transitive
     description:
@@ -527,10 +579,10 @@ packages:
     dependency: transitive
     description:
       name: vibration
-      sha256: "1fd51cb0f91c6d512734ca0e282dd87fbc7f389b6da5f03c77709ba2cf8fa901"
+      sha256: bfb274be6996651d36bf3e3a947d2122767dae255cfb9ce6ce8ee4b38fb56bad
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.4"
+    version: "3.1.5"
   vibration_platform_interface:
     dependency: transitive
     description:

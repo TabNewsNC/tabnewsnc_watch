@@ -1,75 +1,49 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
+import 'package:tabnews/routing/app_routes.dart';
+import 'package:tabnews/ui/screens/root/root_module.dart';
+import 'package:tabnews/ui/theme/theme_metrics.dart';
+import 'package:tabnews/ui/theme/theme_text.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(
+  ModularApp(
+    module: RootModule(),
+    child: const MyApp(),
+  ),
+);
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'TabNews',
-      themeMode: .dark,
-      theme: ThemeData(
-        useMaterial3: true,
-        visualDensity: .compact,
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      darkTheme: ThemeData(
-        useMaterial3: true,
-        visualDensity: .compact,
-        brightness: Brightness.dark,
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple, brightness: .dark),
-      ),
-      home: const MyHomePage(title: 'TabNews Home Page'),
+  State<StatefulWidget> createState() => _MyAppState();
+}
+
+final class _MyAppState extends State<MyApp> {
+  late final DefaultAppTheme _theme;
+
+  @override
+  void initState() {
+    super.initState();
+    Modular.setInitialRoute(AppRoutes.root);
+    _theme = const DefaultAppTheme(
+      text: ThemeTextImpl(),
+      metrics: ThemeMetricsImpl(),
     );
   }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({required this.title, super.key});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: .center,
-          children: [
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+    return MaterialApp.router(
+      title: 'TabNews',
+      themeMode: .dark,
+      theme: _theme.light,
+      darkTheme: _theme.dark,
+      locale: const Locale('pt', 'BR'),
+      debugShowCheckedModeBanner: false,
+      routerDelegate: Modular.routerDelegate,
+      routeInformationParser: Modular.routeInformationParser,
     );
   }
 }

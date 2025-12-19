@@ -2,6 +2,8 @@
   "cSpell.words": [
     "allprojects",
     "androidx",
+    "appbundle",
+    "buildlog",
     "chatbubble",
     "cupertino",
     "grayscale",
@@ -14,9 +16,12 @@
     "softyes",
     "Subproject",
     "subprojects",
+    "swiftpm",
+    "Symbolication",
     "tabcoins",
     "tabnews",
-    "tabnewsnc"
+    "tabnewsnc",
+    "wearos"
   ],
   "java.configuration.updateBuildConfiguration": "disabled",
   "dart.flutterSdkPath": ".fvm/versions/3.38.5",

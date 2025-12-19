@@ -5,7 +5,7 @@ publish_to: "none"
 homepage: https://softyes.com.br
 repository: https://github.com/TabNewsNC/tabnewsnc_watch
 
-version: 0.1.0+1
+version: 0.1.0+2410010
 
 environment:
   sdk: ^3.10.3

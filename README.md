@@ -41,7 +41,24 @@ respectivos proprietários.
 
 ## 📷 Imagens
 
-Em breve...
+<table>
+  <tr>
+    <td>
+      <img src="docs/splash.png" alt="" width="260px" />
+    </td>
+    <td>
+      <img src="docs/loading.png" alt="" width="260px" />
+    </td>
+    <td>
+      <img src="docs/home.png" alt="" width="260px" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="docs/home2.png" alt="" width="260px" />
+    </td>
+  </tr>
+</table>
 
 ## 📜 Credits
 

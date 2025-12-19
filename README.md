@@ -21,7 +21,8 @@ Veja as dependências do projeto em: [pubspec.yaml](./pubspec.yaml)
 
 ## 🧰 Recursos
 
-Em breve...
+* Listagem de notícias e artigos
+* Em breve...
 
 ## 🌐 TabNews API
 
